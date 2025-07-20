@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <script>
+  alert("Welcome to Nana Aba's November bar and resturant");
+  function myFunction(){document.getElementById("food").innerText = 
+  "<p>This is all for today </p>";}
+</script> -->
+<style>
+body {
+    background-image:url("food2.jpg") ;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.resturant-title{
+    font-size: 40px;
+    text-align: center;
+    color: white ;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 20px rgb(17, 0, 255);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* img:hover{
+  width: 330px;
+  height: 220px;
+  border-radius: 10px 10px 0 0;
+  padding: auto;
+} */
+img{
+      width: 300px;
+      height: 200px;
+      border-radius: 10px 10px 0 0;
+}
+.image-container {
+  padding: 0.5em;
+  margin: 0 auto;  
+  background-color: white;
+  max-width: 300px;
+  transform: rotate(15deg);
+  position: relative;
+  margin-top: 40px;
+   
+}
+.image-container1{
+  padding: 0.5em;
+  margin: 0 auto;  
+  background-color: white;
+  max-width: 300px;
+  transform: rotate(345deg);
+  position: relative;
+  margin-top: 50px;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex .left{
+  position: relative;
+  left: 70px;
+  row-gap: 40;
+}
+figure{
+  list-style: none;
+  padding: 10px;
+  background-color: rgb(11, 11, 119); 
+  /* gap: 10px; */
+   border-radius: 10px;
+}
+.row figcaption{
+  padding: 0.3em 0.8em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: right;
+}
+</style>
+<body>
+  <center>
+    <h1 class="resturant-title">NOVEMBER BAR<br>&<br>RESTURANT</h1>
+    <div class="row">
+      <figure>
+        <img src="banku.jpeg" alt="Banku">
+        <figcaption>Banku with tilapia</figcaption>
+      </figure>
+      <figure>
+        <img src="fufu.jpeg" alt="Fufu">
+        <figcaption>Fufu with light soup</figcaption>
+      </figure>
+      <figure>
+        <img src="maxresdefault.jpg" alt="Gob3">
+        <figcaption>Gob3</figcaption>
+      </figure>
+    </div>
+    <div class="row">
+      <figure>
+        <img src="banku_okra.jpg" alt="Banku with okra stew">
+        <figcaption>Banku with okra stew</figcaption>
+      </figure>
+        <figure>
+          <img src="ampesi.jpeg" alt="Ampesi">
+          <figcaption>Ampesi</figcaption>
+        </figure>
+        <figure>
+          <img src="aky3k3.jpeg" alt="Aky3k3">
+          <figcaption>Aky3k3</figcaption>
+        </figure>
+    </div>
+    <!-- <div class="row">
+      <figure>
+        <img src="OIP.jpeg" alt="Fried rice">
+        <figcaption>Fried Rice with salad and chicken </figcaption>
+      </figure>
+    </div> -->
+    <div class="flex">
+      <div class="image-container">
+        <img src="OIP.jpeg" alt="">
+        <img src="gobe-1.jpg" alt="">
+      </div>
+      <div class="image-container1 left">
+        <img src="OIP.jpeg" alt="">
+        <img src="gobe-1.jpg" alt="">
+      </div>
+    </div>
+  </center>
+</body>
+</html>

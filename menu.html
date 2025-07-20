@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - November Bar and Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* === GLOBAL RESET & BODY === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf0; /* soft ivory background */
+  color: #3b2f2f;
+  line-height: 1.6;
+}
+
+/* === HEADER === */
+header {
+  background-color: #8b0000; /* deep red */
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+/* === MENU SECTIONS === */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #8b0000;
+  border-bottom: 2px solid #ffd700;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0;
+}
+
+ul li {
+  background-color: #ffffff;
+  margin: 12px 0;
+  padding: 15px 25px;
+  border-left: 8px solid #ffa500;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: #3b2f2f;
+  transition: transform 0.2s ease-in-out;
+}
+
+ul li:hover {
+  transform: scale(1.02);
+  background-color: #fff2d6;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #8b0000;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  ul li {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+}
+.menu-item {
+  position: relative;
+  background-color: #ffffff;
+  margin: 15px auto;
+  padding: 15px 25px;
+  border-left: 8px solid #ffa500;
+  border-radius: 8px;
+  max-width: 600px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: #3b2f2f;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.menu-item:hover {
+  transform: scale(1.03);
+  background-color: #fff2d6;
+}
+
+.menu-item img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.menu-item:hover img {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+</style>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#local">Local Dishes</a></li>
+                <li><a href="#continental">Continental</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="local" style="background-color: #fffaf0;">
+    <h2>Ghanaian Local Dishes 🇬🇭</h2>
+
+    <div class="menu-item">
+        <p>Fufu with Light Soup – GHS 35</p>
+        <img src="fufu.jpeg" alt="Fufu with Light Soup">
+    </div>
+
+    <div class="menu-item">
+        <p>Banku with Tilapia & Pepper – GHS 40</p>
+        <img src="banku.jpeg" alt="Banku with Tilapia">
+    </div>
+
+    <div class="menu-item">
+        <p>Aky3k3 – GHS 30</p>
+        <img src="aky3k3.jpeg" alt="aky3k3">
+    </div>
+
+    <!-- Add more dishes similarly... -->
+</section>
+
+<section id="continental" style="background-color: #fef4e8;">
+    <h2>Continental Dishes 🌍</h2>
+
+    <div class="menu-item">
+        <p>Chicken Alfredo Pasta – GHS 45</p>
+        <img src="images/alfredo.jpg" alt="Chicken Alfredo Pasta">
+    </div>
+
+    <div class="menu-item">
+        <p>Grilled Chicken with Fries – GHS 38</p>
+        <img src="images/grilled-chicken.jpg" alt="Grilled Chicken">
+    </div>
+
+    <div class="menu-item">
+        <p>Fried Rice with Beef Sauce – GHS 35</p>
+        <img src="images/fried-rice.jpg" alt="Fried Rice with Beef Sauce">
+    </div>
+
+    <div class="menu-item">
+        <p>Vegetable Stir Fry – GHS 30</p>
+        <img src="images/veggie-stirfry.jpg" alt="Vegetable Stir Fry">
+    </div>
+
+    <div class="menu-item">
+        <p>Caesar Salad – GHS 25</p>
+        <img src="images/caesar-salad.jpg" alt="Caesar Salad">
+    </div>
+</section>
+
+
+    <footer style="text-align: center; padding: 20px; background-color: #8b0000; color: white;">
+        <p>&copy; 2025 November Bar and Restaurant | Koforidua, Ghana</p>
+    </footer>
+</body>
+</html>

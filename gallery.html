@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - November Bar and Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf0; /* warm ivory */
+  color: #3b2f2f; /* deep cocoa brown */
+  line-height: 1.6;
+}
+
+header {
+  background-color: #8b0000; /* deep red - like Ghanaian stew */
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffd700; /* golden like kente shine */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+    .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05) contrast(1.1);
+}
+
+</style>
+<body>
+  <header>
+    <h1>Our Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="gallery" style="background-color: #fffaf0; padding: 40px 20px;">
+    <h2 style="color: #8b0000; text-align: center;">A Taste You Can See 😍</h2>
+    <div class="gallery-grid">
+      <img src="food1.jpeg" alt="Fufu with light soup">
+      <img src="food2.jpg" alt="Jollof rice and chicken">
+      <img src="banku.jpeg" alt="Banku and tilapia">
+      <img src="OIP.jpeg" alt="Grilled chicken with fries">
+      <img src="gobe-1.jpg" alt="Chicken Alfredo pasta">
+      <img src="OIP (3).jpeg" alt="Inside November Bar">
+      <img src="OIP (1).jpeg" alt="Outside view of the restaurant">
+      <img src="OIP.webp" alt="Chef in the kitchen">
+    </div>
+  </section>
+
+  <footer style="text-align: center; padding: 20px; background-color: #8b0000; color: white;">
+    <p>&copy; 2025 November Bar and Restaurant | Koforidua, Ghana</p>
+  </footer>
+</body>
+</html>
